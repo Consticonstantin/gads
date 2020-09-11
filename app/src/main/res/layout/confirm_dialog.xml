@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_extra_large">
+<ImageView
+    android:id="@+id/close"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:layout_gravity="end"
+    android:background="@drawable/circle"
+    android:src="@drawable/ic_baseline_close_24"
+    />
+    <androidx.appcompat.widget.AppCompatTextView
+         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/lbl_confirm"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginVertical="@dimen/padding_extra_large"
+        />
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ouline_btn_bg"
+            android:paddingHorizontal="@dimen/padding_extra_large"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/lbl_yes"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>

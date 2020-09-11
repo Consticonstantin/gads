@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GADS</string>
+    <string name="tab_text_1">Learning leaders</string>
+    <string name="tab_text_2">Skill leaders</string>
+    <string name="lbl_submission">Project Submission</string>
+    <string name="lbl_firstName">First name</string>
+    <string name="lbl_last_name">Last name</string>
+    <string name="lbl_email">Email address</string>
+    <string name="lbl_link">Project on GITHUB (link)</string>
+    <string name="btn_submit">Submit</string>
+    <string name="lbl_leader">LEADERBOARD</string>
+    <string name="lbl_confirm">Are you sure ?</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_succeed">Submission successful</string>
+    <string name="lbl_failed">Submission not successful</string>
+    <string name="skill_iq">skill IQ score, </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hours">learning hours, </string>
+</resources>

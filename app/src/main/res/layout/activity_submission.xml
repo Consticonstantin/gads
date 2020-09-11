@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+
+    ><androidx.appcompat.widget.Toolbar
+    android:id="@+id/team_appBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleX="1."
+            android:src="@drawable/gads_trimmed" />
+
+
+</androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/team_appBar"
+        tools:layout_editor_absoluteX="-16dp">
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_extra_large"
+            android:drawableBottom="@drawable/line_gradient"
+            android:text="@string/lbl_submission"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_gradient"
+            android:layout_margin="@dimen/padding_small"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_firstName"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_marginVertical="@dimen/padding_extra_large"
+                android:background="@drawable/edittext_bg"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/firstname"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_last_name"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginVertical="@dimen/padding_extra_large"
+                android:background="@drawable/edittext_bg"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/lastName"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_email"
+            android:layout_marginVertical="@dimen/padding_extra_large"
+            android:padding="8dp"
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/email"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_link"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginVertical="@dimen/padding_extra_large"
+            android:padding="8dp"
+            android:id="@+id/link"
+            />
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="@dimen/padding_extra_large"
+            android:textAllCaps="false"
+            android:paddingHorizontal="50dp"
+            android:background="@drawable/submit_btn_bg"
+            android:text="@string/btn_submit"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
